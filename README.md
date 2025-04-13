@@ -39,8 +39,8 @@ This project uses Maven as the build tool.
 
 **Clone the Repository:**
 
-git clone <your_repository_url>
-cd <your_project_directory>
+git clone https://github.com/vidhyasr25/monefy.git
+cd https://github.com/vidhyasr25/monefy.git
 
 **Set up Android Environment (if needed):**
 

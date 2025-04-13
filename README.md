@@ -61,55 +61,27 @@ Please install the monefy application on the emulator or on the real device wher
 
 **Configure Maven Dependencies:**
 
-Ensure your pom.xml file includes the necessary dependencies:
-
-<dependencies>
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-java</artifactId>
-        <version>7.16.1</version> <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.cucumber</groupId>
-        <artifactId>cucumber-junit</artifactId> <version>7.16.1</version> <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.13.2</version> <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>rest-assured</artifactId>
-        <version>5.3.2</version>  <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.16.1</version>  <scope>test</scope>
-    </dependency>
-</dependencies>
-
-and the surefire plugin
-
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.2.5</version> <configuration>
-                <includes>
-                    <include>**/*Runner.java</include> </includes>
-                 <systemPropertyVariables>
-                    <cucumber.plugin>pretty,html:target/cucumber-reports</cucumber.plugin>
-                </systemPropertyVariables>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
+Ensure your pom.xml file includes the necessary dependencies similar to the dependencies in pom.xml:
 
 #### Running the Tests
 
 The tests are executed using Maven. Open a terminal in the project's root directory and use the following commands:
+To run the entire testsuite
+`mvn verify
+`
+To run specific test or test run based on tags as follows:
+- For Mobile tests
 
+`  mvn verify -Dcucumber.filter.tags="@E2E"
+`
+- For API test run
 
+  `mvn verify -Dcucumber.filter.tags="@E2EAPI"`
+
+## Reports:
+
+Cucumber reports are generated under the directory target/site/cucumber-pretty.html, with the execution of every test run
+
+Please find the already generated reports on the successful execution earlier with the name as follows
+1. cucumber-pretty 3_MobileTests.html
+2. cucumber-pretty_MobileAndAPIRun.html

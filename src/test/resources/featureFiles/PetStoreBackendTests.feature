@@ -1,4 +1,4 @@
-@E2E
+@E2EAPI
 Feature: CRUD commands
 
   @addPet

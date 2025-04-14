@@ -88,3 +88,4 @@ Cucumber reports are generated under the directory target/site/cucumber-pretty.h
 Please find the already generated reports on the successful execution earlier with the name as follows
 1. cucumber-pretty 3_MobileTests.html
 2. cucumber-pretty_MobileAndAPIRun.html
+3. cucumber-pretty_allPass.html

@@ -79,6 +79,8 @@ To run specific test or test run based on tags as follows:
 
   `mvn verify -Dcucumber.filter.tags="@E2EAPI"`
 
+Please update the emulator device id with your device id in the feature files in the path "src/test/resources/featureFiles/MonefyBaseActions.feature"
+
 ## Reports:
 
 Cucumber reports are generated under the directory target/site/cucumber-pretty.html, with the execution of every test run

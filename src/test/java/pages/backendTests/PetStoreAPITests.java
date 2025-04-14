@@ -22,7 +22,7 @@ public class PetStoreAPITests {
      * this methods sets the body of the add new request
      */
     public void addContent() {
-        petStoreAPIModel.setId(RandomUtils.nextInt(2000,2500));
+        petStoreAPIModel.setId(RandomUtils.nextInt(2001,2500));
         petStoreAPIModel.setName("Animal" + RandomStringUtils.randomAlphabetic(3));
         petStoreAPIModel.setStatus("available");
         petCategory.setName(RandomStringUtils.randomAlphabetic(4));
@@ -35,8 +35,8 @@ public class PetStoreAPITests {
      * this method sets the body for update request
      */
     public void updateContent() {
-        petStoreAPIModel.setId(45);
-        petStoreAPIModel.setName("Goat" + RandomStringUtils.randomAlphabetic(3));
+        petStoreAPIModel.setId(10);
+        petStoreAPIModel.setName("GoatsDog");
         petStoreAPIModel.setStatus("available");
         petCategory.setName("abc"+RandomStringUtils.randomAlphabetic(4));
         petCategory.setId(RandomUtils.nextInt(300,550));

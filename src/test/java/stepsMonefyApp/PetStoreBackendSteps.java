@@ -16,7 +16,7 @@ public class PetStoreBackendSteps {
     @Given("user updates a existing pet")
     public void userUpdatesAExistingPet() {
         Assert.assertEquals(200, petStoreAPITests.updatePet());
-        System.out.println("New pet has been added");
+        System.out.println("Existing pet has been updated");
     }
 
     @Given("user fetches the pets by available status")

@@ -44,14 +44,12 @@ public class AndroidDriverCreation {
 
             cap.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
             cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
-            cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 6 * 60);
             cap.setCapability(MobileCapabilityType.UDID, deviceId);
             cap.setCapability(MobileCapabilityType.DEVICE_NAME, deviceId);
-            cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, appPackage);
-            cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, appActivity);
             cap.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS, true);
+            cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, appPackage);
             cap.setCapability(AndroidMobileCapabilityType.UNICODE_KEYBOARD, true);
-            cap.setCapability(AndroidMobileCapabilityType.RESET_KEYBOARD, false);
+            cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, appActivity);
 
            try{
                driver = new AndroidDriver<>(appiumServerURL,cap);

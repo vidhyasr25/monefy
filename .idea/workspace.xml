@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1468be4-c066-46cf-b43d-317228cd0034" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/featureFiles/MonefyBaseActions.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AndroidDriverCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AndroidDriverCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/backendTests/PetStoreAPITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/backendTests/PetStoreAPITests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepsMonefyApp/MonefyStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsMonefyApp/MonefyStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepsMonefyApp/PetStoreBackendSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepsMonefyApp/PetStoreBackendSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/featureFiles/MonefyBaseActions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/featureFiles/MonefyBaseActions.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
     "Cucumber Java.Scenario: Verification of new addition of a Pet.executor": "Run",
     "Cucumber Java.Scenario: Verification of new addition of an expense.executor": "Coverage",
     "Cucumber Java.Scenario: Verification of new addition of an income.executor": "Run",
+    "Cucumber Java.Scenario: Verification of updating an existing Pet.executor": "Run",
     "JUnit.RunCucumberTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -68,14 +72,14 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.RunCucumberTest">
-    <configuration name="Feature: MonefyBaseActions" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: PetStoreBackendTests" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featureFiles/MonefyBaseActions.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featureFiles/PetStoreBackendTests.feature" />
       <option name="GLUE" value="stepsMonefyApp" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="monefy" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: MonefyBaseActions" />
+      <option name="SUGGESTED_NAME" value="Feature: PetStoreBackendTests" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -127,15 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verification of new addition of an income" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verification of updating an existing Pet" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featureFiles/MonefyBaseActions.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/featureFiles/PetStoreBackendTests.feature" />
       <option name="GLUE" value="stepsMonefyApp" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="monefy" />
-      <option name="NAME_FILTER" value="^Verification of new addition of an income$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verification of new addition of an income$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verification of new addition of an income" />
+      <option name="NAME_FILTER" value="^Verification of updating an existing Pet$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verification of updating an existing Pet$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verification of updating an existing Pet" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -159,10 +163,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RunCucumberTest" />
-        <item itemvalue="Cucumber Java.Scenario: Verification of new addition of an income" />
-        <item itemvalue="Cucumber Java.Feature: MonefyBaseActions" />
-        <item itemvalue="Cucumber Java.Scenario: Verification of new addition of an expense" />
         <item itemvalue="Cucumber Java.Scenario: Verification of deletion of an expense" />
+        <item itemvalue="Cucumber Java.Scenario: Verification of new addition of an expense" />
+        <item itemvalue="Cucumber Java.Feature: PetStoreBackendTests" />
+        <item itemvalue="Cucumber Java.Scenario: Verification of updating an existing Pet" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +192,9 @@
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/monefy$Scenario__Verification_of_getting_the_pets_by_status.ic" NAME="Scenario: Verification of getting the pets by status Coverage Results" MODIFIED="1744558516858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/monefy$Scenario__Verification_of_new_addition_of_an_income.ic" NAME="Scenario: Verification of new addition of an income Coverage Results" MODIFIED="1744655641931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
   </component>

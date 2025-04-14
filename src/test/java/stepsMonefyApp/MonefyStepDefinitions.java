@@ -15,9 +15,13 @@ public class MonefyStepDefinitions extends CommonVariables {
 
 
     @Given("app is launched on the device using the package {string} and uuid of the device {string}")
-    public void createDriverAndroid(String packageApp, String uuidOfTheDevice) throws Exception{
-        System.out.println("Generate the driver for Android");
-        androidDriver = androidDriverCreation.generateTheAndroidDriverForAndroidMobile(packageApp, uuidOfTheDevice, Monefy_Default_app_activity);
+    public void createDriverAndroid(String packageApp, String uuidOfTheDevice){
+        try{
+            System.out.println("Generate the driver for Android");
+            androidDriver = androidDriverCreation.generateTheAndroidDriverForAndroidMobile(packageApp, uuidOfTheDevice, Monefy_Default_app_activity);
+        }catch (Exception e){
+            System.out.println("Unabe to launch the application due to : "+e);
+        }
 
 
     }

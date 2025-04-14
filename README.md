@@ -72,7 +72,7 @@ To run the entire testsuite
 To run specific test or test run based on tags as follows:
 - For Mobile tests
 
-`  mvn verify -Dcucumber.filter.tags="@E2E"
+ `mvn verify -Dcucumber.filter.tags="@E2E"
 `
 - For API test run
 
